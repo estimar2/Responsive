@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-:root {
-  --white-color: #fff;
-  --black-color: #000;
-}
-
 body {
   background: #c8e6c9;
 
