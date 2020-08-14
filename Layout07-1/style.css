@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+
+  margin: 0;
+}
+
+body {
+  background: #e3f2fd;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#wrap {
+  width: 1200px;
+
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+
+  background: #b2defe;
+}
+
+#banner {
+  width: 100%;
+  height: 400px;
+
+  background: #7ecbfd;
+}
+
+/* content1 */
+#content1 {
+  overflow: hidden;
+}
+
+#content1 .nav {
+  float: left;
+
+  width: 30%;
+  height: 500px;
+
+  background: #43b5fc;
+}
+
+#content1 .article_right1 {
+  float: left;
+
+  width: 70%;
+  height: 250px;
+
+  background: #00a5fb;
+}
+
+#content1 .article_right2 {
+  float: left;
+
+  width: 70%;
+  height: 250px;
+
+  background: #0096fa;
+}
+
+/* content2 */
+#content2 {
+  overflow: hidden;
+}
+
+#content2 > article {
+  float: left;
+
+  width: 33.333%;
+  height: 300px;
+}
+
+#content2 .article_box1 {
+  background: #0088ec;
+}
+
+#content2 .article_box2 {
+  background: #0076d9;
+}
+
+#content2 .article_box3 {
+  background: #0064c6;
+}
+
+/* content3 */
+#content3 {
+  overflow: hidden;
+
+  padding: 5%;
+
+  background: #00a6fc;
+}
+
+#content3 > article {
+  float: left;
+
+  width: 23%;
+  height: 200px;
+
+  margin: 1%;
+
+  border-radius: 8px;
+
+  background: #0076d9;
+}
+
+#footer {
+  clear: both;
+
+  width: 100%;
+  height: 100px;
+
+  background: #43b5fc;
+}
+
+/* Media query */
+/* 0 ~ 1240px */
+@media (max-width: 1240px) {
+  #wrap {
+    width: 100%;
+  }
+
+  #content2 .article_box1 {
+    width: 50%;
+  }
+
+  #content2 .article_box2 {
+    width: 50%;
+  }
+
+  #content2 .article_box3 {
+    display: none;
+  }
+
+  #content3 .article_square1 {
+    width: 31.333%;
+  }
+
+  #content3 .article_square2 {
+    width: 31.333%;
+  }
+
+  #content3 .article_square3 {
+    width: 31.333%;
+  }
+
+  #content3 .article_square4 {
+    display: none;
+  }
+}
+
+/* 0 ~ 768px */
+@media (max-width: 768px) {
+  #wrap {
+    width: 100%;
+  }
+
+  #content2 .article_box1 {
+    width: 100%;
+  }
+
+  #content2 .article_box2 {
+    width: 100%;
+  }
+}
+
+/* 0 ~ 480px */
+@media (max-width: 480px) {
+  #wrap {
+    width: 100%;
+  }
+
+  #content1 .nav,
+  #content1 .article_right1,
+  #content1 .article_right2 {
+    width: 100%;
+    height: 200px;
+  }
+
+  #content3 .article_square1,
+  #content3 .article_square2,
+  #content3 .article_square3,
+  #content3 .article_square4 {
+    width: 98%;
+  }
+
+  #content3 .article_square4 {
+    display: block;
+  }
+}
