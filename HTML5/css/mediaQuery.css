@@ -3,6 +3,10 @@
 /* Media query */
 /* 0 ~ 1220px */
 @media (max-width: 1220px) {
+  #contents .container {
+    border: 0;
+  }
+
   .container {
     width: 100%;
   }
@@ -22,6 +26,20 @@
 
 /* 0 ~ 960px */
 @media (max-width: 960px) {
+  #contents_center {
+    margin-right: 0;
+
+    border-right: 0;
+  }
+
+  #contents_right {
+    position: static;
+
+    width: 100%;
+
+    border-top: 1px solid var(--border);
+  }
+
   .nav > div {
     float: none;
 
@@ -47,6 +65,15 @@
 
 /* 0 ~ 768px */
 @media (max-width: 768px) {
+  #contents_left {
+    float: none;
+
+    width: 100%;
+  }
+
+  #contents_center {
+    border-left: 0;
+  }
 }
 
 /* 0 ~ 600px */

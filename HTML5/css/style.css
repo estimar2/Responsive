@@ -19,6 +19,9 @@
   --blue6: #25aad0;
   --blue7: #0093bd;
   --blue8: #3192bf;
+
+  /* border color */
+  --border: #dbdbdb;
 }
 
 body {
@@ -45,9 +48,49 @@ body {
   background: var(--title_bg);
 }
 
+#contents .container {
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+#contents_left {
+  float: left;
+
+  width: 250px;
+}
+
+#contents_center {
+  overflow: hidden;
+
+  min-height: 1300px;
+
+  margin-right: 250px;
+
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+#contents_right {
+  position: absolute;
+
+  width: 250px;
+
+  top: 0;
+  right: 0;
+}
+
+#footer {
+  clear: both;
+
+  border-top: 1px solid var(--border);
+}
+
 /* Container */
 .container {
+  position: relative;
+
   width: 1200px;
+
   margin: 0 auto;
 
   /* background: rgba(0, 0, 0, 0.3); */
@@ -340,4 +383,41 @@ body {
 .title .btn:hover {
   box-shadow: 0 0 0 3px rgba(75, 154, 191, 0.9) inset,
     0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Main content */
+.column {
+  padding: 15px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.column.col1 {
+}
+
+.column.col2 {
+}
+
+.column.col3 {
+  border-bottom: 0;
+}
+
+.column.col4 {
+}
+
+.column.col5 {
+}
+
+.column.col6 {
+  border-bottom: 0;
+}
+
+.column.col7 {
+}
+
+.column.col8 {
+}
+
+.column.col9 {
+  border-bottom: 0;
 }
