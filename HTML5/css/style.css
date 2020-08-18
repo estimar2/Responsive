@@ -107,15 +107,3 @@ body {
   box-shadow: 0 0 0 5px rgba(75, 154, 191, 0.9) inset,
     0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
-
-/* Media query */
-/* 0 ~ 1200px */
-@media (max-width: 1200px) {
-  .container {
-    width: 100%;
-  }
-
-  .row {
-    padding: 0px 15px;
-  }
-}

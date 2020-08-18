@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* Media query */
+/* 0 ~ 1200px */
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  .row {
+    padding: 0px 15px;
+  }
+}
