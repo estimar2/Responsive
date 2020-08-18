@@ -26,12 +26,12 @@ body {
 
   font-size: 13px;
   font-weight: normal;
+
+  background: url(../img/header_bg.jpg) repeat-x center top;
 }
 
 /* Layout */
 #header {
-  background: url(../img/header_bg.jpg) repeat-x center top;
-
   font-family: "Abel", sans-serif;
 }
 
@@ -215,6 +215,8 @@ body {
 /* nav */
 .nav {
   overflow: hidden;
+
+  display: none;
 
   padding: 25px 0px;
 }

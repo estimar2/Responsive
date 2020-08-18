@@ -1,13 +1,92 @@
 @charset "utf-8";
 
 /* Media query */
-/* 0 ~ 1200px */
-@media (max-width: 1200px) {
+/* 0 ~ 1220px */
+@media (max-width: 1220px) {
   .container {
     width: 100%;
   }
 
   .row {
     padding: 0px 15px;
+  }
+
+  .title .btn {
+    right: 5px;
+  }
+}
+
+/* 0 ~ 1024px */
+@media (max-width: 1024px) {
+}
+
+/* 0 ~ 960px */
+@media (max-width: 960px) {
+  .nav > div {
+    float: none;
+
+    width: 100%;
+  }
+
+  .nav > div:last-child {
+    width: 100%;
+  }
+
+  .nav > div ol {
+    margin-bottom: 10px;
+  }
+
+  .nav > div li {
+    width: 33.3333%;
+  }
+
+  .nav > div:last-child li {
+    width: 33.3333%;
+  }
+}
+
+/* 0 ~ 768px */
+@media (max-width: 768px) {
+}
+
+/* 0 ~ 600px */
+@media (max-width: 600px) {
+  .header {
+    height: auto;
+  }
+
+  .header .header_tit {
+    display: none;
+  }
+
+  .header .header_icon {
+    display: none;
+  }
+
+  .nav > div li {
+    width: 50%;
+  }
+
+  .nav > div:last-child li {
+    width: 50%;
+  }
+
+  .title .btn {
+    display: none;
+  }
+}
+
+/* 0 ~ 480px */
+@media (max-width: 480px) {
+}
+
+/* 0 ~ 320px */
+@media (max-width: 320px) {
+  .nav > div li {
+    width: 100%;
+  }
+
+  .nav > div:last-child li {
+    width: 100%;
   }
 }
