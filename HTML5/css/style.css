@@ -6,11 +6,15 @@
   --white-color: #fff;
   --hover-color: #ccc;
 
+  /* background */
+  --nav_bg: #f6fdff;
+
   /* blue */
   --blue1: #51b0dc;
   --blue2: #4a9abf;
   --blue3: #51b0dc;
   --blue4: #3192df;
+  --blue5: #25a2d0;
 }
 
 body {
@@ -23,6 +27,10 @@ body {
 /* Layout */
 #header {
   background: url(../img/header_bg.jpg) repeat-x center top;
+}
+
+#nav {
+  background: var(--nav_bg);
 }
 
 /* Container */
@@ -192,4 +200,75 @@ body {
   opacity: 1;
 
   top: -33px;
+}
+
+/* nav */
+.nav {
+  overflow: hidden;
+
+  padding: 25px 0px;
+}
+
+.nav > div {
+  float: left;
+
+  width: 40%;
+}
+
+.nav > div:last-child {
+  width: 20%;
+}
+
+.nav > div h3 {
+  font-size: 18px;
+
+  color: var(--blue5);
+  font-weight: bold;
+
+  margin-bottom: 4px;
+}
+
+.nav > div ol {
+  overflow: hidden;
+}
+
+.nav > div li {
+  float: left;
+
+  width: 50%;
+
+  position: relative;
+
+  padding-left: 8px;
+
+  box-sizing: border-box;
+}
+
+.nav > div li::before {
+  content: "";
+
+  width: 3px;
+  height: 3px;
+
+  background: var(--blue5);
+
+  border-radius: 50%;
+
+  position: absolute;
+
+  top: 8px;
+  left: 0;
+}
+
+.nav > div:last-child li {
+  width: 100%;
+}
+
+.nav > div h3 {
+  font-size: 18px;
+
+  color: var(--blue5);
+  font-weight: bold;
+
+  margin-bottom: 4px;
 }
