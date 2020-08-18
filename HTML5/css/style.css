@@ -15,6 +15,7 @@
   --blue3: #51b0dc;
   --blue4: #3192df;
   --blue5: #25a2d0;
+  --blue6: #25aad0;
 }
 
 body {
@@ -260,15 +261,32 @@ body {
   left: 0;
 }
 
-.nav > div:last-child li {
+.nav > div li a {
+  position: relative;
+}
+
+.nav > div li a:after {
+  content: "";
+
+  display: inline-block;
+
+  width: 0;
+  height: 1px;
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  background: var(--blue6);
+
+  transition: all 0.2s ease-out;
+}
+
+.nav > div li:hover a::after {
   width: 100%;
 }
 
-.nav > div h3 {
-  font-size: 18px;
-
-  color: var(--blue5);
-  font-weight: bold;
-
-  margin-bottom: 4px;
+.nav > div:last-child li {
+  width: 100%;
 }
