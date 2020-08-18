@@ -8,6 +8,7 @@
 
   /* background */
   --nav_bg: #f6fdff;
+  --title_bg: #eaf7fd;
 
   /* blue */
   --blue1: #51b0dc;
@@ -16,6 +17,8 @@
   --blue4: #3192df;
   --blue5: #25a2d0;
   --blue6: #25aad0;
+  --blue7: #0093bd;
+  --blue8: #3192bf;
 }
 
 body {
@@ -28,10 +31,18 @@ body {
 /* Layout */
 #header {
   background: url(../img/header_bg.jpg) repeat-x center top;
+
+  font-family: "Abel", sans-serif;
 }
 
 #nav {
   background: var(--nav_bg);
+}
+
+#title {
+  font-family: "Nanum Brush Script", cursive;
+
+  background: var(--title_bg);
 }
 
 /* Container */
@@ -45,8 +56,6 @@ body {
 /* header */
 .header {
   height: 327px;
-
-  font-family: "Abel", sans-serif;
 }
 
 /* header menu */
@@ -289,4 +298,44 @@ body {
 
 .nav > div:last-child li {
   width: 100%;
+}
+
+/* title */
+.title {
+  position: relative;
+
+  text-align: center;
+}
+
+.title h2 {
+  color: var(--blue7);
+  font-size: 39px;
+
+  padding: 5px;
+}
+
+.title .btn {
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+
+  top: 5px;
+  right: 0;
+
+  color: var(--white-color);
+  font-size: 35px;
+
+  line-height: 60px;
+
+  border-radius: 50%;
+
+  background: var(--blue8);
+
+  transition: all 0.3s ease;
+}
+
+.title .btn:hover {
+  box-shadow: 0 0 0 3px rgba(75, 154, 191, 0.9) inset,
+    0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
