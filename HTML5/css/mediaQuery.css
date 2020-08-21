@@ -101,6 +101,64 @@
   .title .btn {
     display: none;
   }
+
+  .column.col1 {
+    padding: 0;
+
+    border-bottom: 0;
+  }
+
+  .column.col1 .col_tit {
+    display: none;
+  }
+
+  .column.col1 .col_desc {
+    display: none;
+  }
+
+  .column.col1 .menu ul {
+    overflow: hidden;
+  }
+
+  .column.col1 .menu li {
+    box-sizing: border-box;
+
+    width: 33.333%;
+
+    float: left;
+
+    text-align: center;
+
+    border-right: 1px solid var(--border);
+  }
+
+  .column.col1 .menu li:nth-child(3n) {
+    border-right: 0;
+  }
+
+  .column.col1 .menu li a {
+    color: var(--white-color);
+
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .column.col1 .menu li a:hover {
+    box-shadow: none;
+
+    background: rgba(36, 130, 174, 0.3);
+  }
+
+  .column.col1 .menu li a i {
+    display: none;
+  }
+
+  .column.col2 {
+    background: var(--white-color);
+  }
+
+  .column.col4 {
+    border-top: 1px solid var(--border);
+  }
 }
 
 /* 0 ~ 480px */
