@@ -24,3 +24,4 @@ https://wtss.tistory.com/category/SITE/02%20RESPONSIVE
 20. HTML5 - col1 _ menu
 21. HTML5 - col1 _ menu responsive
 22. HTML5 - Notice board (one-line effect)
+23. HTML5 - Notice board (two-line effect)
