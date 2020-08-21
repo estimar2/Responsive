@@ -451,23 +451,27 @@
               <div class="blog1">
                 <h5 class="ir_su">image1</h5>
                 <figure>
-                  <img
-                    src="./img/blog1_@1.jpg"
+                  <!-- <img
+                    src="./img/blog3_@1.jpg"
                     alt="normal image"
                     width="100%"
                     class="img_normal"
                   />
                   <img
-                    src="./img/blog1_@2.jpg"
+                    src="./img/blog3_@2.jpg"
                     alt="retina image"
                     width="100%"
                     class="img_retina"
-                  />
-                  <!-- <img
-                    src="./img/blog2_@1.jpg"
-                    srcset="img/blog1_@1.jpg 1x, /img/blog1_@2.jpg 2x"
-                    alt="normal image"
                   /> -->
+                  <img
+                    src="img/blog3_@1.jpg"
+                    srcset="
+                      img/blog3_@1.jpg 1x,
+                      img/blog3_@2.jpg 2x,
+                      img/blog3_@3.jpg 3x
+                    "
+                    alt="이미지"
+                  />
                   <figcaption>
                     반응형 웹사이트 이미지 글입니다. 반응형 웹사이트 이미지
                     글입니다. 반응형 웹사이트 이미지 글입니다. 반응형 웹사이트
@@ -477,28 +481,15 @@
               </div>
 
               <!-- blog 2 -->
-              <div class="blog2">
-                <h5 class="ir_su">image2</h5>
-                <figure>
-                  <img
-                    src="./img/blog2_@1.jpg"
-                    srcset="img/blog2_@1.jpg 1x, img/blog2_@2.jpg 2x"
-                    alt="normal image"
-                    width="100%"
-                    class=""
-                  />
-                  <!-- <img
-                    src="./img/blog2_@2.jpg"
-                    alt="retina image"
-                    width="100%"
-                    class=""
-                  /> -->
-                  <figcaption>
+              <div class="blog2 mt15">
+                <div class="img_retina">
+                  <h5>image 2</h5>
+                  <p>
                     반응형 웹사이트 이미지 글입니다. 반응형 웹사이트 이미지
                     글입니다. 반응형 웹사이트 이미지 글입니다. 반응형 웹사이트
                     이미지 글입니다.
-                  </figcaption>
-                </figure>
+                  </p>
+                </div>
               </div>
             </article>
           </section>
