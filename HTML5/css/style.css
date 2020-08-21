@@ -5,6 +5,7 @@
   --black-color: #000;
   --white-color: #fff;
   --hover-color: #ccc;
+  --menu-color: #878787;
 
   /* background */
   --nav_bg: #f6fdff;
@@ -402,7 +403,7 @@ body {
 }
 
 .column .col_desc {
-  color: #878787;
+  color: var(--menu-color);
 
   line-height: 18px;
 
@@ -441,4 +442,42 @@ body {
 
 .column.col9 {
   border-bottom: 0;
+}
+
+/* col1 menu */
+.menu {
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+
+  color: var(--menu-color);
+  font-size: 16px;
+
+  text-transform: uppercase;
+
+  border-bottom: 1px solid var(--border);
+
+  padding: 10px;
+
+  transition: box-shadow 0.34s ease, backgroind 0.34s ease;
+}
+
+.menu li a:hover {
+  box-shadow: inset 180px 0 0 0 rgba(36, 130, 174, 0.7);
+
+  color: var(--white-color);
+
+  background: rgba(36, 130, 174, 0.9);
+}
+
+.menu li a i {
+  position: absolute;
+
+  top: 15px;
+  right: 10px;
 }
