@@ -20,3 +20,4 @@ https://wtss.tistory.com/category/SITE/02%20RESPONSIVE
 16. HTML5 - title
 17. HTML5 - header responsive
 18. HTML5 - content layout
+19. HTML5 - content title

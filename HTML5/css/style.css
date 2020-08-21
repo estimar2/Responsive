@@ -19,6 +19,7 @@
   --blue6: #25aad0;
   --blue7: #0093bd;
   --blue8: #3192bf;
+  --blue9: #2f7fa6;
 
   /* border color */
   --border: #dbdbdb;
@@ -390,6 +391,26 @@ body {
   padding: 15px;
 
   border-bottom: 1px solid var(--border);
+}
+
+.column .col_tit {
+  color: var(--blue9);
+
+  font-size: 20px;
+
+  padding-bottom: 5px;
+}
+
+.column .col_desc {
+  color: #878787;
+
+  line-height: 18px;
+
+  border-bottom: 1px dashed var(--border);
+
+  padding-bottom: 15px;
+
+  margin-bottom: 15px;
 }
 
 .column.col1 {
