@@ -598,3 +598,29 @@ body {
 
   font-size: 10px;
 }
+
+/* Blog 01 */
+.blog1 img {
+  width: 100%;
+}
+
+.blog1 .img_normal {
+  width: 100%;
+}
+
+.blog1 .img_retina {
+  display: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 1.5dppx) {
+  .blog1 .img_retina {
+    display: initial;
+  }
+  .blog1 .img_normal {
+    display: none;
+  }
+}
+
+/* Blog 02 */
