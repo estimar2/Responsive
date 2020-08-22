@@ -16,14 +16,15 @@ https://wtss.tistory.com/category/SITE/02%20RESPONSIVE
 12. HTML5 - header icon
 13. HTML5 - Share when clicking the header icon
 14. HTML5 - menu
-15. HTML5 - menu _ line effect
+15. HTML5 - menu \_ line effect
 16. HTML5 - title
 17. HTML5 - header responsive
 18. HTML5 - content layout
 19. HTML5 - content title
-20. HTML5 - col1 _ menu
-21. HTML5 - col1 _ menu responsive
+20. HTML5 - col1 \_ menu
+21. HTML5 - col1 \_ menu responsive
 22. HTML5 - Notice board (one-line effect)
 23. HTML5 - Notice board (two-line effect)
 24. HTML5 - Blog01
 25. HTML5 - Blog02
+26. HTML5 - Image slider 01

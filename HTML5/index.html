@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mediaQuery.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/font-awesome.css" />
 
     <!-- font -->
@@ -499,8 +500,23 @@
             <h3 class="ir_su">반응형 사이트 가운데 컨텐츠</h3>
             <!-- col4 -->
             <article class="column col4">
-              <h4 class="col_tit">Title</h4>
-              <p class="col_desc">이곳은 설명 부분입니다.</p>
+              <h4 class="col_tit">Slick Slider</h4>
+              <p class="col_desc">
+                slick.js를 이용한 이미지 슬라이드 효과입니다.
+              </p>
+
+              <!-- Slick Slider 01 -->
+              <div class="slider">
+                <div>
+                  <img src="./img/slider01.jpg" alt="이미지01" />
+                </div>
+                <div>
+                  <img src="./img/slider02.jpg" alt="이미지02" />
+                </div>
+                <div>
+                  <img src="./img/slider03.jpg" alt="이미지03" />
+                </div>
+              </div>
             </article>
             <!-- col5 -->
             <article class="column col5">
@@ -546,9 +562,28 @@
 
     <!-- Javascript Libraris -->
     <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/modernizr-custom.js"></script>
     <!-- Share when clicking the header icon -->
     <script>
+      // Slick Slider
+      $(".slider").slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              dots: false,
+            },
+          },
+        ],
+      });
+
+      // SNS 공유하기
       // http://www.facebook.com/sharer.php?u={페이지 제목}&t={페이지링크}
       // http://twitter.com/intent/tweet?text={페이지 제목}&url={페이지링크}
       // https://share.naver.com/web/shareView.nhn?url={페이지링크}&title={페이지 제목}
