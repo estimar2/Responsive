@@ -18,10 +18,25 @@
   .title .btn {
     right: 5px;
   }
+
+  .square a {
+    width: 24%;
+  }
+
+  .square a:nth-child(5n) {
+    display: none;
+  }
 }
 
 /* 0 ~ 1024px */
 @media (max-width: 1024px) {
+  .square a {
+    width: 32.333%;
+  }
+
+  .square a:nth-child(5) {
+    display: block;
+  }
 }
 
 /* 0 ~ 960px */
@@ -171,6 +186,14 @@
   .slider figcaption span {
     font-size: 14px;
   }
+
+  .square a {
+    width: 49%;
+  }
+
+  .square a:nth-child(5) {
+    display: none;
+  }
 }
 
 /* 0 ~ 480px */
@@ -185,5 +208,16 @@
 
   .nav > div:last-child li {
     width: 100%;
+  }
+
+  .square a {
+    width: 100%;
+
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .square a:nth-child(5n) {
+    display: block;
   }
 }
