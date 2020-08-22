@@ -22,6 +22,8 @@
   --blue8: #3192bf;
   --blue9: #2f7fa6;
   --blue10: #449ce2;
+  --blue11: #5dbfeb;
+  --blue12: #2b91c8;
 
   /* border color */
   --border: #dbdbdb;
@@ -662,3 +664,157 @@ body {
 }
 
 /* Slick Slider */
+.slider figure {
+  position: relative;
+}
+
+.slider figcaption {
+  width: 100%;
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  color: var(--white-color);
+  font-size: 18px;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider figcaption em {
+  opacity: 0;
+
+  display: block;
+
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  font-family: "Abel", sans-serif;
+
+  transition: all 0.84s ease;
+  transform: translateX(50px);
+}
+
+.slider figcaption span {
+  opacity: 0;
+
+  display: block;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  transition: all 0.84s 0.2s ease;
+  transform: translateX(50px);
+}
+
+.slider .slick-active figcaption em,
+.slider .slick-active figcaption span {
+  opacity: 1;
+
+  transform: translateX(0);
+}
+
+.slider .slick-dots {
+  width: 100%;
+
+  display: block;
+
+  text-align: center;
+}
+
+.slider .slick-dots li {
+  width: 15px;
+  height: 15px;
+
+  display: inline-block;
+
+  margin: 5px;
+}
+
+.slider .slick-dots li.slick-active button {
+  background: var(--blue12);
+}
+
+.slider .slick-dots li button {
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  display: block;
+
+  font-size: 0;
+
+  line-height: 0;
+
+  background: var(--blue11);
+}
+
+.slider .slick-prev {
+  width: 30px;
+  height: 30px;
+
+  display: inline-block;
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  z-index: 1000;
+
+  font: normal normal normal 14px/1 FontAwesome;
+  text-indent: -9999px;
+}
+
+.slider .slick-prev::before {
+  content: "\f053";
+
+  position: absolute;
+
+  top: 8px;
+  left: 9px;
+
+  color: var(--blue11);
+
+  text-indent: 0;
+}
+
+.slider .slick-next {
+  width: 30px;
+  height: 30px;
+
+  display: inline-block;
+
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+
+  z-index: 1000;
+
+  font: normal normal normal 14px/1 FontAwesome;
+  text-indent: -9999px;
+}
+
+.slider .slick-next::before {
+  content: "\f054";
+
+  position: absolute;
+
+  top: 8px;
+  left: 11px;
+
+  color: var(--blue11);
+
+  text-indent: 0;
+}

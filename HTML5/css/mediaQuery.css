@@ -159,6 +159,18 @@
   .column.col4 {
     border-top: 1px solid var(--border);
   }
+
+  .slider figcaption {
+    padding: 10px;
+  }
+
+  .slider figcaption em {
+    font-size: 18px;
+  }
+
+  .slider figcaption span {
+    font-size: 14px;
+  }
 }
 
 /* 0 ~ 480px */

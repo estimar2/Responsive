@@ -508,13 +508,40 @@
               <!-- Slick Slider 01 -->
               <div class="slider">
                 <div>
-                  <img src="./img/slider01.jpg" alt="이미지01" />
+                  <figure>
+                    <img src="./img/slider001.jpg" alt="이미지01" />
+                    <figcaption>
+                      <em>Responsive Site 1</em>
+                      <span>
+                        슬라이드 플러그인을 이용한 반응형 이미지 슬라이드
+                        입니다.
+                      </span>
+                    </figcaption>
+                  </figure>
                 </div>
                 <div>
-                  <img src="./img/slider02.jpg" alt="이미지02" />
+                  <figure>
+                    <img src="./img/slider001.jpg" alt="이미지01" />
+                    <figcaption>
+                      <em>Responsive Site 2</em>
+                      <span>
+                        슬라이드 플러그인을 이용한 반응형 이미지 슬라이드
+                        입니다.
+                      </span>
+                    </figcaption>
+                  </figure>
                 </div>
                 <div>
-                  <img src="./img/slider03.jpg" alt="이미지03" />
+                  <figure>
+                    <img src="./img/slider001.jpg" alt="이미지01" />
+                    <figcaption>
+                      <em>Responsive Site 3</em>
+                      <span>
+                        슬라이드 플러그인을 이용한 반응형 이미지 슬라이드
+                        입니다.
+                      </span>
+                    </figcaption>
+                  </figure>
                 </div>
               </div>
             </article>
@@ -571,13 +598,12 @@
         dots: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        arrows: false,
+        arrows: true,
         responsive: [
           {
             breakpoint: 768,
             settings: {
-              arrows: true,
-              dots: false,
+              autoplay: false,
             },
           },
         ],
