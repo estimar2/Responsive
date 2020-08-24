@@ -31,3 +31,4 @@ https://wtss.tistory.com/category/SITE/02%20RESPONSIVE
 27. HTML5 - Image slider 02
 28. HTML5 - lightgallery
 29. HTML5 - filter effect
+30. HTML5 - video
