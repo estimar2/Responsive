@@ -1067,6 +1067,78 @@ body {
   z-index: 1;
 }
 
+/* side effect 03 */
+.side3 {
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--white-color);
+}
+
+.side3 figcaption {
+  opacity: 0;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  color: var(--white-color);
+  text-align: center;
+  text-transform: uppercase;
+
+  transition: all 0.3s ease;
+
+  transform: translate(350%, -50%) rotate(180deg);
+}
+
+.side3:hover figcaption {
+  opacity: 1;
+
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.side3 figcaption:after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 100px;
+  height: 100px;
+
+  background: var(--black-color);
+
+  border-radius: 50%;
+
+  z-index: -1;
+
+  transform: translate(-50%, -50%);
+}
+
+.side3 img {
+  display: block;
+
+  transition: all 0.3s ease;
+}
+
+.side3:hover img {
+  opacity: 0.4;
+}
+
+.side3 h3 {
+  font-size: 16px;
+}
+
+.side3 em {
+  display: block;
+
+  font-weight: bold;
+}
+
 /* footer */
 .footer {
   text-align: center;
