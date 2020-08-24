@@ -36,3 +36,4 @@ https://wtss.tistory.com/category/SITE/02%20RESPONSIVE
 32. HTML5 - footer
 33. HTML5 - menu toggle effect
 34. HTML5 - side effect 01
+35. HTML5 - side effect 02
