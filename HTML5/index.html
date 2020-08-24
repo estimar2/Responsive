@@ -710,6 +710,31 @@
     <script src="js/modernizr-custom.js"></script>
     <!-- Share when clicking the header icon -->
     <script>
+      // responsive resize
+      $(window).resize(function () {
+        var wWidth = $(window).width();
+
+        if (wWidth > 600) {
+          $(".nav").removeAttr("style");
+        }
+      });
+
+      // menu toggle effect
+      $(".btn").click(function (e) {
+        e.preventDefault();
+
+        $(".nav").slideToggle();
+        $(".btn").toggleClass("open");
+
+        if ($(".btn").hasClass("open")) {
+          // open이 있을때
+          $(".btn").find("i").attr("class", "fa fa-angle-up");
+        } else {
+          // open이 없을때
+          $(".btn").find("i").attr("class", "fa fa-angle-down");
+        }
+      });
+
       // Slick Slider
       $(".slider").slick({
         dots: true,
@@ -727,7 +752,11 @@
       });
 
       // light Gallery
-      $(".lightbox").lightGallery({});
+      $(".lightbox").lightGallery({
+        autoplay: true,
+        pause: 3000,
+        progressBar: true,
+      });
 
       // SNS 공유하기
       // http://www.facebook.com/sharer.php?u={페이지 제목}&t={페이지링크}
